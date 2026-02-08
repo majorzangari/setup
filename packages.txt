@@ -1,0 +1,10 @@
+# Stuff I need on every machine, probably forgetting a lot
+
+git
+base-devel
+stow
+cloc
+firefox
+neovim
+docker
+alacritty
