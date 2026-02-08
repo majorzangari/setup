@@ -6,3 +6,5 @@ firefox
 neovim
 docker
 alacritty
+ttf-dejavu-nerd
+jdk-openjdk
