@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_DIR="$SCRIPT_DIR/.."
+
+echo "$REPO_DIR"
+
 echo "Updating and installing packages"
-sudo pacman -Syu --needed - < ../packages.txt
+sudo pacman -Syu --needed - < "$REPO_DIR/packages.txt"
 
 
 DOTFILES_DIR="$HOME/dotfiles"
@@ -32,8 +37,8 @@ else
 	echo "paru already installed"
 fi
 
-AUR_FILE="../aur.txt"
-if [ -if "$AUR_FILE" ]; then
+AUR_FILE="$REPO_DIR/aur.txt"
+if [ -f "$AUR_FILE" ]; then
 	echo "Installing AUR packages"
 	while read -r pkg; do
 		[ -z "$pkg" ] && continue
@@ -42,3 +47,4 @@ if [ -if "$AUR_FILE" ]; then
 fi
 
 echo "Setup complete"
+echo "You should probably run \"sudo usermod -aG docker <youruser>" though"
