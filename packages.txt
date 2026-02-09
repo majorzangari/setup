@@ -8,3 +8,4 @@ docker
 alacritty
 ttf-dejavu-nerd
 jdk-openjdk
+noto-fonts-cjk
