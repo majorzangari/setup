@@ -9,3 +9,11 @@ alacritty
 ttf-dejavu-nerd
 jdk-openjdk
 noto-fonts-cjk
+fish
+stylua
+ast-grep
+luarocks
+fd
+lazygit
+fzf
+unzip
