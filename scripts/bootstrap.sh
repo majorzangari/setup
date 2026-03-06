@@ -22,7 +22,7 @@ echo "Stowing dotfiles"
 cd "$DOTFILES_DIR"
 
 for pkg in bash alacritty; do
-	stow -v "$pkg"
+	stow -v -D "$pkg"
 done
 
 AUR_BUILD="$HOME/.aur-build"
