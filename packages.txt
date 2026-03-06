@@ -17,3 +17,5 @@ fd
 lazygit
 fzf
 unzip
+fcitx5
+fcitx5-chinese-addons
