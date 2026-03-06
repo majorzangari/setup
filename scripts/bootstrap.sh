@@ -47,4 +47,4 @@ if [ -f "$AUR_FILE" ]; then
 fi
 
 echo "Setup complete"
-echo "You should probably run \"sudo usermod -aG docker <youruser>" though"
+echo "You should probably run \"sudo usermod -aG docker <youruser>\" though"
