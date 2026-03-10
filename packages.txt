@@ -15,6 +15,7 @@ ast-grep
 luarocks
 fd
 lazygit
+tree-sitter-cli
 fzf
 unzip
 fcitx5
