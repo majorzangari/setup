@@ -21,9 +21,10 @@ fi
 echo "Stowing dotfiles"
 cd "$DOTFILES_DIR"
 
-for pkg in bash alacritty; do
-	stow -v -D "$pkg"
+for pkg in bash alacritty nvim kde; do
+	stow --adopt "$pkg"
 done
+git restore .
 
 AUR_BUILD="$HOME/.aur-build"
 mkdir -p "$AUR_BUILD"
